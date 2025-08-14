@@ -3,11 +3,12 @@
 client_id = "7b9b601d0ee989983900c76eec012ce9"
 name = "Bip Fees"
 handle = "bip-fees"
-application_url = "https://example.com/"
+application_url = "https://telephone-mambo-imported-genetics.trycloudflare.com"
 embedded = true
 
 [build]
 include_config_on_deploy = true
+automatically_update_urls_on_dev = true
 
 [webhooks]
 api_version = "2025-07"
@@ -25,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = ["https://telephone-mambo-imported-genetics.trycloudflare.com/auth/callback", "https://telephone-mambo-imported-genetics.trycloudflare.com/auth/shopify/callback", "https://telephone-mambo-imported-genetics.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = true
