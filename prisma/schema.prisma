@@ -30,3 +30,12 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model Fee {
+  id        Int     @id @default(autoincrement())
+  name      String
+  value     Float   // Unified field for amount or percentage value
+  type      String  // 'fixed' or 'percentage'
+  productId String? // GID of the created Shopify product (e.g., 'gid://shopify/Product/123')
+  shop      String  // Link to shop domain or ID
+}
